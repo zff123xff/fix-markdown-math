@@ -1,0 +1,42 @@
+{
+  "name": "fix-markdown-math",
+  "publisher": "xiaofanfan",
+  "displayName": "Fix Markdown Math",
+  "description": "Normalize LaTeX math and repair common Markdown formatting issues in the current file.",
+  "version": "0.0.3",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zff123xff/fix-markdown-math.git"
+  },
+  "homepage": "https://github.com/zff123xff/fix-markdown-math#readme",
+  "bugs": {
+    "url": "https://github.com/zff123xff/fix-markdown-math/issues"
+  },
+  "categories": ["Formatters"],
+  "keywords": ["markdown", "math", "latex"],
+  "files": ["extension.js", "README.md", "CHANGELOG.md", "LICENSE"],
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "main": "./extension.js",
+  "activationEvents": [
+    "onCommand:fixMarkdownMath.fix"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "fixMarkdownMath.fix",
+        "title": "Fix Entire Markdown File"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "fixMarkdownMath.fix",
+        "key": "alt+m",
+        "mac": "alt+m",
+        "when": "editorTextFocus && editorLangId == markdown"
+      }
+    ]
+  }
+}

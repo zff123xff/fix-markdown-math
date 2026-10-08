@@ -1,0 +1,7 @@
+node_modules/
+*.vsix
+fix-markdown-math-source.zip
+.DS_Store
+.agents/
+.codex/
+.aws/
